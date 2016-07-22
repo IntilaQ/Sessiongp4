@@ -13,7 +13,7 @@ namespace mobileApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new PageEmployee());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

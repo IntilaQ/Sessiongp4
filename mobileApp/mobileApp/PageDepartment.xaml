@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileApp.PageDepartment">
+  <ScrollView>
+    <StackLayout>
+
+      <StackLayout>
+        <Entry x:Name="Txtpostname" Placeholder="Name"/>
+        <Button x:Name="PostBtn"  Text="Post" Clicked="PostBtn_OnClicked"/>
+      </StackLayout>
+
+      <StackLayout>
+        <Entry x:Name="TxtputDepartementId" Placeholder="DepartementId"/>
+        <Entry x:Name="Txtputname" Placeholder="Name"/>
+        <Button x:Name="PutBtn" Text="Put"  Clicked="PutBtn_OnClicked" />
+      </StackLayout>
+
+      <StackLayout>
+        <Entry x:Name="TxtDeleteDepartementId" Placeholder="DepartementId" />
+        <Button x:Name="DeleteBtn" Text="Delete" Clicked="DeleteBtn_OnClicked"  />
+      </StackLayout>
+      <StackLayout>
+        <Button x:Name="Getbtn" Text="Get" Clicked="Getbtn_OnClicked"/>
+        <ListView x:Name="Mainlist"
+                  HasUnevenRows="True">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <StackLayout>
+                  <Label Text="{Binding DepartementId }" TextColor="Blue"/>
+                  <Label Text="{Binding Name }" TextColor="Blue" />
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

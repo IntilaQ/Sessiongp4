@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:mobileApp"
              x:Class="mobileApp.MainPage">
-
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
-
+<StackLayout>
+  <Button x:Name="Employeebtn"  Text="Employee"   Clicked="Employeebtn_OnClicked"  />
+  <Button x:Name="Departementbtn"  Text="Departement"  Clicked="Departementbtn_OnClicked" />
+</StackLayout>
+  
 </ContentPage>

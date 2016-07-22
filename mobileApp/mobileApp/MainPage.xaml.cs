@@ -13,5 +13,16 @@ namespace mobileApp
         {
             InitializeComponent();
         }
+
+        private void Employeebtn_OnClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new PageEmployee());
+        }
+
+
+        private void Departementbtn_OnClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new PageDepartment());
+        }
     }
 }
